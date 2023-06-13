@@ -1,0 +1,38 @@
+body{
+   background-color: #eee;
+   padding-top: 56px;
+}
+
+.padTop {
+   padding-top: 56px;
+}
+
+.btn-outline-danger {
+   background-color: rgba(255, 0, 0, 0.3);
+   color: black;
+}
+
+.btn-outline-info {
+   background-color: rgba(0, 255, 255, 0.3);
+   color: black;
+}
+
+.cardArticle {
+   min-height: 200px;
+}
+
+footer {
+   margin-top: 44px;
+}
+
+.footerLink {
+   font-size: 50px;
+   margin: 0px 5px;
+}
+
+@media (max-width: 768px) {
+   .padTop {
+      padding-top: 0%;
+   }
+ }
+ 
