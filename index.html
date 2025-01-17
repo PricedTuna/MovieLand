@@ -20,88 +20,95 @@
 </head>
 
 <body>
-   <nav class="navbar navbar-expand-md navbar bg-primary fixed-top" data-bs-theme="dark">
-      <div class="container">
-         <a class="navbar-brand" href="#"><i class="fa-solid fa-film"></i> Movie <span
-               class="text-warning">Land</span></a>
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-               <li class="nav-item">
-                  <a class="nav-link" href="#home">Home</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#movies">Movies</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#">Contact me</a>
-               </li>
-            </ul>
+   <div style="min-height: 100vh;">
+
+      <nav class="navbar navbar-expand-md navbar bg-primary fixed-top" data-bs-theme="dark">
+         <div class="container">
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-film"></i> Movie <span
+                  class="text-warning">Land</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+               aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                     <a class="nav-link" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#movies">Movies</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Contact me</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+      <div class="container-fluid my-3" id="home">
+         <div class="row g-3">
+            <aside class="col-md-3" id="asideContainer">
+               <div class="sticky-top padTop">
+                  <div class="card shadow p-3 border bg-light">
+                     <div class="card-body">
+                        <form>
+                           <div class="mb-3">
+                              <label for="movieSearchInput" class="form-label fs-5"><i
+                                    class="fa-solid fa-magnifying-glass"></i>
+                                 Search movie</label>
+                              <input type="text" class="form-control border border-3" id="movieSearchInput"
+                                 placeholder="movie name">
+                           </div>
+                           <div class="d-grid gap-2">
+                              <button type="button" class="btn btn-outline-primary" id="searchMovieBtn">Search</button>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="card shadow mt-3 p-3 border bg-light">
+                     <div class="card-body">
+                        <form>
+                           <div class="mb-3">
+                              <label for="movieTitleInput" class="form-label fs-5"><i class="fa-solid fa-plus"></i> Add
+                                 movie</label>
+                              <input type="text" class="form-control border border-3" id="movieTitleInput"
+                                 placeholder="movie name">
+                           </div>
+                           <div class="form-floating mb-3">
+                              <textarea class="form-control border border-3" placeholder="Leave a comment here"
+                                 id="movieDescriptionInput" style="height: 100px"></textarea>
+                              <label for="movieDescriptionInput" class="fs-6 text-secondary">description</label>
+                           </div>
+                           <div class="d-grid gap-2">
+                              <button type="button" class="btn btn-outline-primary" id="addMovieBtn">Add</button>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </aside>
+
+            <main class="col-md-9 bg-light border border-2 p-3" id="movies">
+               <div class="row text-center">
+                  <h1 class="fs-1 p-3 mb-4">My movie land</h1>
+               </div>
+               <div class="row row-cols-sm-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-2 text-center"
+                  id="moviesRow">
+
+                  <p class="fs-3 col-12">this is where ur movie will be showed :p</p>
+
+               </div>
+            </main>
          </div>
       </div>
-   </nav>
 
-   <div class="container-fluid my-3" id="home">
-      <div class="row g-3">
-         <aside class="col-md-3" id="asideContainer">
-            <div class="sticky-top padTop">
-               <div class="card shadow p-3 border bg-light">
-                  <div class="card-body">
-                     <form>
-                        <div class="mb-3">
-                           <label for="movieSearchInput" class="form-label fs-5"><i class="fa-solid fa-magnifying-glass"></i>
-                              Search movie</label>
-                           <input type="text" class="form-control border border-3" id="movieSearchInput"
-                              placeholder="movie name">
-                        </div>
-                        <div class="d-grid gap-2">
-                           <button type="button" class="btn btn-outline-primary" id="searchMovieBtn">Search</button>
-                        </div>
-                     </form>
-                  </div>
-               </div>
-               <div class="card shadow mt-3 p-3 border bg-light">
-                  <div class="card-body">
-                     <form>
-                        <div class="mb-3">
-                           <label for="movieTitleInput" class="form-label fs-5"><i class="fa-solid fa-plus"></i> Add
-                              movie</label>
-                           <input type="text" class="form-control border border-3" id="movieTitleInput"
-                              placeholder="movie name">
-                        </div>
-                        <div class="form-floating mb-3">
-                           <textarea class="form-control border border-3" placeholder="Leave a comment here"
-                              id="movieDescriptionInput" style="height: 100px"></textarea>
-                           <label for="movieDescriptionInput" class="fs-6 text-secondary">description</label>
-                        </div>
-                        <div class="d-grid gap-2">
-                           <button type="button" class="btn btn-outline-primary" id="addMovieBtn">Add</button>
-                        </div>
-                     </form>
-                  </div>
-               </div>
-            </div>
-         </aside>
-
-         <main class="col-md-9 bg-light border border-2 p-3" id="movies">
-            <div class="row text-center">
-               <h1 class="fs-1 p-3 mb-4">My movie land</h1>
-            </div>
-            <div class="row row-cols-sm-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-2 text-center" id="moviesRow">
-
-               <p class="fs-3 col-12">this is where ur movie will be showed :p</p>
-
-            </div>
-         </main>
-      </div>
    </div>
-
    <footer class="bg-dark text-center py-2">
       <div class="container">
-         <a class="footerLink" href="https://www.linkedin.com/in/edgarvegaruiz/"><i class="fa-brands fa-linkedin"></i></a>
+         <a class="footerLink" href="https://www.linkedin.com/in/edgarvegaruiz/"><i
+               class="fa-brands fa-linkedin"></i></a>
          <a class="footerLink" href="https://github.com/PricedTuna"><i class="fa-brands fa-github"></i></a>
       </div>
    </footer>

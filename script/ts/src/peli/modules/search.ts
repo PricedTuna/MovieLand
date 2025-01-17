@@ -16,9 +16,10 @@ export default function () {
 
       let moviesFiltered = moviesStored.filter((movie: any) => movie.title === movieToSearch);
 
+      alert("No movie was found, please, type the exact title of the movie you want to search for.");
+
       (moviesFiltered.length <= 0) ? list.show(moviesStored) : list.show(moviesFiltered)
 
       movieSearchInput.value = ""
-
    })
 }

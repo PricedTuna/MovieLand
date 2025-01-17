@@ -45,8 +45,8 @@ export default function () {
             let index = moviesStored.findIndex((movie:any) => movie.id === movieId)
             moviesStored[index] = { 
                id: movieId,
-               title: movie.querySelector("#movieEditedDescription").value,
-               description: movie.querySelector("#movieEditedTitle").value
+               title: movie.querySelector("#movieEditedTitle").value,
+               description: movie.querySelector("#movieEditedDescription").value
             }
             storage.save(moviesStored)
             list.show(moviesStored)
